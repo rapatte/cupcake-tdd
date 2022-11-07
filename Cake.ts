@@ -16,7 +16,7 @@ export class Cake {
         return this.name
     }
 
-    getPrice() {
+    getPrice(): number {
 
         if(this.name === "coockie" && this.ingredient && this.ingredient[0] === "nuts") {
             return 2.2;
