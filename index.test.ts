@@ -90,7 +90,7 @@ test('We can build a bundle with 1 bundle of 2 cookies and 1 Cupcake and check p
     bundle.addCake(cupcake);
     bundle.addCake(cookie2);
     mainBundle.addBundle(bundle);       
-    expect(mainBundle.getBundlesPrice()).toBe(5);
+    expect(mainBundle.getBundlePrice()).toBe(5);
 })
 test('We can build a bundle with many bundle of bundle and many cakes and check price', () => {
     const mainBundle = new Bundle();
@@ -118,6 +118,7 @@ test('We can build a bundle with many bundle of bundle and many cakes and check 
     subBundle2.addBundle(bundle4);
 
     mainBundle.addBundle(subBundle1);       
-    mainBundle.addBundle(subBundle2);       
-    expect(mainBundle.getBundlesPrice()).toBe(6);
+    mainBundle.addBundle(subBundle2);
+
+    expect(mainBundle.getBundlePrice()).toBe(6);
 })

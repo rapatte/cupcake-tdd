@@ -1,7 +1,6 @@
 export class Cake {
     private name: string;
     private ingredient: string[];
-    private price: number;
     constructor(name: string, ingredient?: string[]) {
         this.name = name;
         this.ingredient = ingredient;
@@ -15,9 +14,7 @@ export class Cake {
         }
         return this.name
     }
-
     getPrice(): number {
-
         if(this.name === "coockie" && this.ingredient && this.ingredient[0] === "nuts") {
             return 2.2;
         }
@@ -30,7 +27,6 @@ export class Cake {
         if(this.name === "coockie") {
             return 2;
         }
-
        return 1;
     }
 }
